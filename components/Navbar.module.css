@@ -1,0 +1,58 @@
+.nav {
+  font-family: Special Elite;
+  font-size: 2.5vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: #444444;
+  color: #dddddd;
+}
+.nav.item:focus,
+.nav.item:active {
+  color: #B03122;
+}
+.more {
+  display: none;
+}
+.bug {
+  height: 3vh;
+  max-height: 35px;
+  width:auto;
+}
+@media screen and (min-width: 150px) {
+  .nav {
+      font-size: 3.5vw;
+  }
+}
+@media screen and (min-width: 350px) {
+  .nav {
+      font-size: 2.5vw;
+  }
+}
+@media screen and (min-width: 400px) {
+  .nav {
+      font-size: 2.5vw;
+  }
+}
+@media screen and (min-width: 450px) {
+  .nav {
+      font-size: 2vw;
+  }
+  .less {
+      display: none;
+  }
+  .more {
+      display: flex;
+  }
+  .more:focus,
+  .more:active {
+      color: #B03122;
+  }
+}
+@media screen and (min-width: 600px) {
+  .nav {
+      font-size: 1.5vw;
+  }
+}

@@ -1,0 +1,27 @@
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    background: #222;
+    width: 100%;
+    height: auto;
+
+}
+.footer div {
+    padding: 1vw;
+    align-self: center;
+}
+.footnote {
+   font-size: 1.5vh;
+   font-family: Special Elite;
+   color: #aaaaaa;
+}
+.skills {
+    column-count: 4;
+    column-rule: 1px solid #333;
+    font-family: Electrolize;
+    color: #666666;
+    font-size: 1.3vh;
+}

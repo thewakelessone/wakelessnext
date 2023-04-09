@@ -1,0 +1,25 @@
+
+.container {
+    background: #ffffff;
+    color: #666666;
+}
+.article {
+    padding-left: 20px;
+}
+
+@media screen and (min-width: 700px) {
+  .container {
+      padding-top: 0;
+      margin-top: 0;
+      column-count: 2;
+  }
+
+}
+@media screen and (min-width: 1000px) {
+   .container {
+      column-count: 3;
+   }
+   .caption {
+      font-size: 1.2vw;
+   }
+}

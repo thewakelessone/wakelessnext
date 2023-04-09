@@ -1,0 +1,40 @@
+
+.container {
+    background: #ffffff;
+    color: #666666;
+}
+.exhibit {
+  width: 98%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.article {
+    padding-left: 10px;
+}
+.img {
+  width: 6vw;
+  padding: 0.3vw;
+}
+
+
+@media screen and (min-width: 700px) {
+  .container {
+      padding-top: 0;
+      margin-top: 0;
+      column-count: 2;
+  }
+  .img {
+      width: 9vw;
+  }
+
+}
+@media screen and (min-width: 1000px) {
+   .container {
+      column-count: 3;
+   }
+   .img {
+      width: 6vw;
+      padding: 0.3vw;
+   }
+}

@@ -1,0 +1,28 @@
+.article {
+  margin: 20px;
+}
+.post {
+    background: #bbbbbb;
+    margin: 2vw;
+    padding: 2vw;
+    color: #111111;
+}
+.post p {
+    margin: 1vh 3vw;
+}
+@media screen and (min-width: 700px) {
+/* tablet portrait
+  keep single column layout just add padding on the left and right
+*/
+  .article {
+    column-count: 2;
+    column-gap: 20px;
+    column-rule: 1px dotted #666666;
+    padding-top: 10px;
+  }
+  .padding {
+    margin: 20px;
+    border-bottom: 1px dotted #999999;
+  }
+
+}

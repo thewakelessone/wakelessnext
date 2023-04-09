@@ -1,0 +1,17 @@
+
+@media screen and (min-width: 700px) {
+  .container {
+      padding-top: 0;
+      margin-top: 0;
+      column-count: 2;
+  }
+
+}
+@media screen and (min-width: 1000px) {
+   .container {
+      column-count: 4;
+   }
+   .caption {
+      font-size: 1.2vw;
+   }
+}
