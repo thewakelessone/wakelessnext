@@ -1,11 +1,11 @@
 import Layout from '../../components/layout';
-import { getAllArticleSlugs, getArticleData } from '../../lib/articles';
+import { getArticles, getArticle } from '../../lib/articles';
 
 export async function getStaticProps({ params }) {
-    const articleData = await getArticleData(params.slug);
+    const article = await getArticle(params.slug);
     return {
         props: {
-            articleData,
+            article,
         },
     };
 }
@@ -18,17 +18,17 @@ export async function getStaticPaths() {
     };
 }
 
-export default function Article({ articleData }) {
+export default function Article({ article }) {
     //console.log(articleData)
     return ( 
       <>
-           {articleData.title}
+           {article.title}
            <br />
-           {articleData.slug}
+           {article.slug}
            <br />
-           {articleData.date}
+           {article.date}
            <br />
-           <div dangerouslySetInnerHTML={{ __html: articleData.contentHtml }} />
+           <div dangerouslySetInnerHTML={{ __html: article.contentHtml }} />
       </>
     );
 }
