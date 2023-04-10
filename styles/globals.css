@@ -21,11 +21,12 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+i,
 h1,
 h2,
 p,
 ul {
+  padding: 0 2vw;
   margin: 2vh 0;
   list-style-type: none;
 }

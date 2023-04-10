@@ -1,13 +1,23 @@
-import Head from 'next/head';
+// import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 import lilithPic from '../public/img/lilith.png';
 import { getAllPublished } from '../lib/notion';
-import styles from '../styles/Journal.module.css'
+import styles from '../styles/Journal.module.css';
 
+export const getStaticProps = async () => {
+  const data = await getAllPublished();
+
+  return {
+    props: {
+      posts: data,
+    },
+    revalidate: 60
+  };
+};
 export default function Journal({posts}) {
   if(!posts) return <h1>No posts</h1>
-
+  console.log(posts)
   return (
      <>
        <main>
@@ -24,31 +34,10 @@ export default function Journal({posts}) {
          ))}
   		 </article>
      </>
-  )
+  );
 }
 
-export const getStaticProps = async () => {
 
-  const data = await getAllPublished();
-  console.log('data: ' + data);
-
-/*
-  const data = {
-    id: 1,
-    title: 'test',
-    tags: 'tag, tag2',
-    description: 'description',
-    slug: 'slug',
-  };
-*/
-  return {
-    props: {
-      posts: data,
-    },
-    revalidate: 60
-  };
-
-};
 
 
 
