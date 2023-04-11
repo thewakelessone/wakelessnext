@@ -17,7 +17,7 @@ export const getStaticProps = async () => {
 };
 export default function Journal({posts}) {
   if(!posts) return <h1>No posts</h1>
-  console.log(posts)
+
   return (
      <>
        <main>

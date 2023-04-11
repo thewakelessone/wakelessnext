@@ -4,7 +4,7 @@ import Image from 'next/image'
 import onePic from '../public/img/one.png'
 import styles from '../styles/Home.module.css'
 
-export default function Journal() {
+export default function One() {
   return (
     <div className={styles.container}>
       <article className={styles.article}>

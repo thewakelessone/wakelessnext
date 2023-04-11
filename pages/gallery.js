@@ -46,7 +46,7 @@ export async function getStaticProps() {
   }
 }
 
-export default function Home({images}) {
+export default function Gallery({images}) {
 
   return (
        <div className={styles.container}>

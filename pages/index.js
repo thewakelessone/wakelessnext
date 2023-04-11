@@ -13,7 +13,7 @@ const special_elite = Special_Elite({ weight: '400', subsets: ['latin'] });
 const electrolize = Electrolize({ weight: '400', subsets: ['latin'] });
 
 
-export default function Home() {
+export default function Index() {
 
   return (
        <div className={styles.container}>
@@ -114,5 +114,3 @@ export default function Home() {
        </div>
   );
 }
-
-  /**     <ReactMarkdown>{ articles[2].content }</ReactMarkdown> */

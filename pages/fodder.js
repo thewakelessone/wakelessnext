@@ -4,7 +4,7 @@ import Image from 'next/image'
 import babyPic from '../public/img/baby.png'
 import styles from '../styles/Fodder.module.css'
 
-export default function Journal() {
+export default function Fodder() {
   return (
      <div className={styles.container}>
          <Image src={babyPic} alt="fodder" />
