@@ -1,9 +1,25 @@
 
 .container {
-    background: #ffffff;
+    background: #999999;
     color: #666666;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .article {
+    overflow-x: hidden;
+    margin: 2vw;
+    border-radius: 12px;
+    word-break: break-word;
+    background: #ffffff;
+    gap: 0;
+    max-width: 400px;
+    font-size: 14px;
+ /* border: 1px solid red; */
+}
+.text {
     padding-left: 20px;
 }
 

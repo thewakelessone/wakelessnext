@@ -7,9 +7,10 @@ import styles from '../styles/Fodder.module.css'
 export default function Fodder() {
   return (
      <div className={styles.container}>
+       <article className={styles.article}>
          <Image src={babyPic} alt="fodder" />
-         <article className={styles.article}>
-            <h1>Fodder . Inspiration . Weird shit</h1>
+         <div className={styles.text}>
+            <h3>Fodder . Inspiration . Weird shit</h3>
             <ul>
               <li>Note to self: consider making a youtube channel of short summary clips of this shit</li>
               <li>::: <a href="https://www.mysteryfleshpitnationalpark.com/">
@@ -33,6 +34,7 @@ export default function Fodder() {
               <li>::: <a href="https://www.youtube.com/watch?v=4zFB5TvqodQ">DMT entities</a></li>
               <li>::: <a href="https://effectindex.com/">The Subjective Effect Index: trippy</a></li>
             </ul>
+         </div>
   		   </article>
   		   <article className={styles.article}>
   		      <h2>PromptNoodles:</h2>
