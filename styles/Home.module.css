@@ -5,7 +5,39 @@
 .greyBG {
     background: #111;
 }
-@media screen and (min-width: 700px) {
+.container {
+  width: 100%;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.article {
+
+    overflow-x: hidden;
+    margin: 2vw;
+    border-radius: 12px;
+    word-break: break-word;
+    background: #222222;
+    gap: 0;
+    max-width: 400px;
+ /*   border: 1px solid red; */
+}
+  .text {
+    diplay: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    font-size:16px;
+    word-break: break-word;
+  }
+  .text b {
+    color: #0070f3;
+  }
+
+
+@media screen and (min-width: 800px) {
 /* tablet portrait
   keep single column layout just add padding on the left and right
 */
@@ -14,6 +46,8 @@
     column-gap: 20px;
     column-rule: 1px dotted #666666;
     padding-top: 10px;
+    width: 90%;
+    max-width: 850px;
   }
   .padding {
     margin: 20px;
