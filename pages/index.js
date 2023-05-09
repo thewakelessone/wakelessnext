@@ -5,6 +5,7 @@ import splashPic from '../public/img/splash.png';
 import bansheePic from '../public/img/bansheebaby.png';
 import backstoryPic from '../public/img/backstory.png';
 import contactPic from '../public/img/contact.png';
+import Menu from '../components/menu';
 
 import { Special_Elite } from 'next/font/google';
 import { Electrolize } from 'next/font/google';
@@ -16,6 +17,8 @@ const electrolize = Electrolize({ weight: '400', subsets: ['latin'] });
 export default function Index() {
 
   return (
+    <div className={styles.wrap}>
+       <Menu className={styles.menu} />
        <div className={styles.container}>
           <article className={styles.article}>
             <Image src={splashPic} alt="wakeless concophonic collective" />
@@ -121,5 +124,6 @@ export default function Index() {
             in the revolution itself if even in some small way just to be a part of this profound historic event. </p>
           </article>
        </div>
+    </div>
   );
 }

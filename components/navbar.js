@@ -11,7 +11,7 @@ export default function Navbar() {
             <Link href="/projects" className={styles.item}>Projects</Link>
             <Link href="/fodder" className={styles.item}>Fodder</Link>
             <Link href="/one" className={styles.item}>One</Link>
-            <Link href="/gallery" className={styles.less}>Gallery</Link>
+            <Link href="/exhibit" className={styles.less}>Gallery</Link>
             <Link href="/mechanicalhand" className={styles.more}>Gallery : Mechanical Hand</Link>
             <Link href="/journal" className={styles.less}>Journal</Link>
             <Link href="/blather" className={styles.more}>Journal : Blather Inflection</Link>

@@ -36,7 +36,7 @@ export default function MechanicalHand({images}) {
               and architecture. Sculpture, 3D modeling, product design, and invention are things we do
               here. Also Generative Art.</p>
   		  </article>
-  		  <Link href="/gallery">
+  		  <Link href="/exhibit">
     		  <div className={styles.exhibit}>
     		    {images.map(({ public_id, width, height }) => (
               <Image
@@ -49,7 +49,7 @@ export default function MechanicalHand({images}) {
             ))}
           </div>
         </Link>
-        <article>
+        <article className={styles.article}>
             <p>Humans have been fascinated with technology since the first sharpened stick.
             Every new breakthrough goes through a process. Step 1 is impressive
             abstraction - the "ooh aah" phase. We are all impressed but left wondering

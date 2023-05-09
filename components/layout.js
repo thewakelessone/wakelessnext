@@ -6,6 +6,7 @@ import styles from './layout.module.css';
 
 import Navbar from './navbar'
 import Footer from './footer'
+// import Menu from './menu'
 
 export default function Layout({ children }) {
     return(
@@ -14,7 +15,9 @@ export default function Layout({ children }) {
             <title>Wakeless collective</title>
           </Head>
           <Navbar />
-          <div>{children}</div>
+          <div className={styles.container}>
+              {children}
+          </div>
           <Footer />
         </>
     )
