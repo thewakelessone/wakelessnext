@@ -5,21 +5,38 @@
 .greyBG {
     background: #111;
 }
-.wrap {
-  display: grid;
-  grid-template-columns: 30% 70%;
+.container {
+    width: 100%;
 }
 
-.container {
-  align-items: start;
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-  width: 100%;
-  background: #111111;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.wrap {
+    display: grid;
+    grid-template-columns: 1% 98% 1%;
 }
+
+@media screen and (min-width: 440px) {
+  .wrap {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .wrap {
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+}
+  .container {
+    align-items: start;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    width: 100%;
+    background: #111111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
 
 .article {

@@ -1,4 +1,16 @@
+@media screen and (max-width: 599px) {
+  .wrap {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+  }
+}
 
+@media screen and (min-width: 600px) {
+  .wrap {
+    display: grid;
+    grid-template-columns: 20% 80%;
+  }
+}
 @media screen and (min-width: 700px) {
   .container {
       padding-top: 0;
@@ -7,7 +19,7 @@
   }
 
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1400px) {
    .container {
       column-count: 4;
    }

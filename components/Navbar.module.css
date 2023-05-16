@@ -54,5 +54,6 @@
 @media screen and (min-width: 600px) {
   .nav {
       font-size: 1.5vw;
+      visibility: hidden;
   }
 }

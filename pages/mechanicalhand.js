@@ -4,6 +4,7 @@ import Image from 'next/image'
 import mechPic from '../public/img/mechhandsplash.png'
 import styles from '../styles/Hand.module.css'
 import { CldUploadButton } from 'next-cloudinary'
+import Menu from '../components/menu';
 
 export async function getStaticProps() {
 
@@ -12,7 +13,6 @@ export async function getStaticProps() {
     {"public_id": "www/babycyclops1",  "width": 100, "height": 100},
     {"public_id": "www/bansheebaby1",  "width": 100, "height": 100},
     {"public_id": "www/bansheebaby5",  "width": 100, "height": 100},
-    {"public_id": "www/bluegod", "width": 100, "height": 100}
   ];
 
   return {
@@ -24,8 +24,10 @@ export async function getStaticProps() {
 
 export default function MechanicalHand({images}) {
   return (
+   <div className={styles.wrap}>
+     <Menu className={styles.menu} />
      <div className={styles.container}>
-        <Image src={mechPic} alt="fodder" />
+        <Image className={styles.splashpic} src={mechPic} alt="fodder" />
         <article className={styles.article}>
           <h3>We ride the bleeding edge with bloodied hands and bleeding hearts.</h3>
              <p>We make the fancy snacks for your eyeholes. And a softened meat product that produces
@@ -64,7 +66,8 @@ export default function MechanicalHand({images}) {
             that entertain, engage, and ocassionally improve or at least significantly alter our daily lives.
             </p>
             <p>Click the magic button: <CldUploadButton uploadPreset="next-cloudinary-unsigned" /></p>
-        </article>
+         </article>
+       </div>
      </div>
   );
 }

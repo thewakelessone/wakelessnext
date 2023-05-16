@@ -2,8 +2,9 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import blatherPic from '../public/img/blather.png'
-import styles from '../styles/Journal.module.css'
+import styles from '../styles/Home.module.css'
 import { getAllPublished } from '../lib/notion';
+import Menu from '../components/menu'
 
 export const getStaticProps = async () => {
   const data = await getAllPublished();
@@ -21,16 +22,29 @@ export default function Blather({posts}) {
   if(!posts) return <h1>No posts</h1>
 
   return (
-     <div className={styles.container}>
+    <div className={styles.wrap}>
+      <Menu className={styles.menu} />
+      <div className={styles.container}>
         <article className={styles.article}>
           <Image src={blatherPic} alt="blather inflection" />
-          <section>
-            <p><i>Welcome to the Wakeless Institute of Language and Thought. </i>Everything
+          <p><i>Welcome to the Wakeless Institute of Language and Thought. </i>Everything
               written happens here be it Narrative, Propaganda, Art Criticism, or Software.
               Blather serves as our warroom as well and blather is where all of our
               research is done.
-            </p>
-          </section>
+          </p>
+          <p>Language is innovation both primordial and meta. It is thing that makes all else possible,
+            the thing we must use to create or discover then implement, explain, and teach. It is a weapon and a
+             tool. It is medicine and disease, love, hate, hope, and death. Language is the mechanism thought and
+             as it evolved so did we. With the spoken word we were critters no more and writing begat civilization.
+             During the renaissance we began speaking literally, describing with precision, and measuring all sorts
+             of things. This led to the invention of science and the industrial revolution. </p>
+          <p>Gutenburg brought books to the great unwashed and ended 2000 years of oppression and stagnation by
+            the catholic church. The telegraph, radio, television, and telephone united humanity across the globe.
+            All impressive transformative events to be sure but nothing compared to the greatest innovation of alltime
+            and it's just getting started.</p>
+            <p>First the adoption of english as the de facto official language for all. Second a global network
+            connecting every man, woman, and child to each other and to our collective knowledge. And third the invention
+            of software language.</p>
         </article>
         <article className={styles.article}>
           <h3>Fun facts about language and the stuff we make with it.</h3>
@@ -86,5 +100,6 @@ export default function Blather({posts}) {
          ))}
         </article>
      </div>
+   </div>
   );
 }

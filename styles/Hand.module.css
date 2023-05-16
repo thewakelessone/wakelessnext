@@ -4,37 +4,50 @@
     color: #666666;
 }
 .exhibit {
-  width: 98%;
+  width: 90%;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
 }
+.splashpic {
+     max-width: 600px;
+}
 .article {
     padding-left: 10px;
+    background: white;
+    max-width: 600px;
 }
 .img {
   width: 6vw;
   padding: 0.3vw;
 }
-
+@media screen and (max-width: 699px) {
+  .wrap {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+  }
+}
 
 @media screen and (min-width: 700px) {
+  .wrap {
+    display: grid;
+    grid-template-columns: 20% 80%;
+  }
+}
+
+
+@media screen and (min-width: 800px) {
   .container {
       padding-top: 0;
       margin-top: 0;
       column-count: 2;
+      column-gap: 10px;
+      column-width: 400px;
+      column-rule-width: thick;
+      background: black;
   }
   .img {
       width: 9vw;
   }
 
-}
-@media screen and (min-width: 1000px) {
-   .container {
-      column-count: 3;
-   }
-   .img {
-      width: 6vw;
-      padding: 0.3vw;
-   }
 }

@@ -8,17 +8,31 @@
     color: #111111;
 }
 .post p {
-    margin: 1vh 3vw;
+    margin: 1vh 1vw;
+}
+@media screen and (max-width: 599px) {
+  .wrap {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+  }
 }
 @media screen and (min-width: 700px) {
 /* tablet portrait
   keep single column layout just add padding on the left and right
 */
+  .wrap {
+    display: grid;
+    grid-template-columns: 20% 80%;
+  }
   .article {
     column-count: 2;
-    column-gap: 20px;
+    column-gap: 10px;
     column-rule: 1px dotted #666666;
     padding-top: 10px;
+    text-align: left;
+  }
+  .article p {
+    max-width: 550px;
   }
   .padding {
     margin: 20px;
